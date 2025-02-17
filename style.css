@@ -194,7 +194,7 @@ footer a {
 
 }
 
-/* Para telas maiores que 768px e menores que 1200px */
+/* Responsividade: Para telas maiores que 768px e menores que 1200px */
 @media (max-width: 1200px) {
     .container {
         flex-direction: column;
@@ -207,7 +207,6 @@ footer a {
     #branco {
         width: 100%;
         margin-left: 0;
-        margin-top: 20px;
     }
 
     header img {
@@ -237,7 +236,7 @@ footer a {
     }
 }
 
-/* Para telas maiores que 480px e menores que 768px */
+/* Para telas menores que 768px */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
