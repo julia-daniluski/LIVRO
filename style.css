@@ -4,8 +4,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Fira sans", sans-serif;
     list-style: none;
+}
+
+/* Estilos gerais para a container */
+.container {
+    display: flex;
+    flex-direction: row; /* Alinha os itens na horizontal */
+    justify-content: space-between; /* Espaça os elementos com o máximo de distância */
+}
+
+
+
+main {    
+    flex: 1; /* Isso permite que o main ocupe o máximo de espaço disponível */
+    width: 70%; /* A largura da main é 70% da tela */
+    padding: 20px;
 }
 
 body {
@@ -30,41 +45,55 @@ header img {
 }
 
 nav a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
-    background-color: #04C4D9;
+    background-color: #e572ff;
     padding: 8px 15px; /* Adicionando padding para aumentar a área clicável */
     border-radius: 5px;
+    border: groove 2px #6D6D6D; /* Borda do aside */
 }
 
 nav a:hover {
     text-decoration: none;
-    background-color: #0396A6; /* Cor mais escura ao passar o mouse */
+    background-color: #db39ff; /* Cor mais escura ao passar o mouse */
 }
 
-section {
+section{
     padding: 20px;
     border-radius: 10px;
-    margin-top: 20px;
     padding: 40px;
-    text-align: center;
 }
-
-h2 {
-    color: #000000;
+h3, h1{
+    font-size: 40px;
+    max-width: 800px;
+    margin: 0 auto;    
+    text-align: center;    
     margin-bottom: 15px;
 }
 
-h1 {
-    color: #000000;
+h2{
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;    
+    text-align: center;    
+    margin-bottom: 15px;
 }
+h4{
+    font-size: 25px;
+    max-width: 800px;
+    margin: 0 auto;    
+    text-align: center;    
+    margin-bottom: 15px;
+}
+
 
 p {
     font-size: 1.1em;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto;    
+    text-align: center;
 }
 
 img {
@@ -75,25 +104,69 @@ img {
     margin-bottom: 20px; /* Adicionando margem inferior para espaçamento */
 }
 
-#sobre {
-    background: #ed9dffb1;
+
+#avaliafilme div, #sobre, #ler, #perso, #sobre, #adaptacao {
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
-}
-
-#avaliafilme div, aside, #sobre, #ler, #perso {
+    padding: 40px;
+    text-align: center;
     background: #ed9dffb1;
     padding: 20px;
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     max-width: 1000px; /* Limita a largura máxima das seções */
+    border: groove 2px #6D6D6D; /* Borda do aside */
+}
+
+#perso img {
+    width: 40%; 
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+#branco {
+    width: 25%; /* Ajusta a largura do aside para 25% da tela */
+    height: 500%;
+    padding: 50px; /* Ajuste o padding */
+    border-radius: 30px; /* Defina o border-radius corretamente */
+    background-color: #ed9dffb1; /* Cor de fundo do aside */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start; /* Alinha os itens no topo */
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    border: groove 2px ; /* Borda com efeito grooved */
+    position: relative; /* Para o ajuste de posicionamento */
+    z-index: 10;
+    margin-bottom: 2000px; /* Espaçamento inferior */
+    margin-left: 900px;
+    margin-top: -3128px;
+}
+
+
+#branco img {
+    width: 100%; /* Faz as imagens ocuparem toda a largura do aside */
+    height: auto;
+    object-fit: cover;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#branco iframe {
+    width: 100%;
+    border-radius: 10px;
 }
 
 footer {
     background: #ed9dff;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px;
     margin-top: 20px;
@@ -101,21 +174,22 @@ footer {
 
 footer button {
     background:#e572ff;
-    color: #ffffff;
+    color: #000000;
     border: none;
     padding: 10px 20px;
     margin: 10px;
     border-radius: 5px;
     cursor: pointer;
+    border: groove 2px #6D6D6D; /* Borda do aside */
 }
 
 footer button:hover {
     background: #db39ff;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 footer a {
-    color: #f8f9fa;
+    color: #000000;
     text-decoration: none;
-    font-weight: bold;
+
 }
