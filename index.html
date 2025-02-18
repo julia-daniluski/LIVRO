@@ -23,23 +23,60 @@
 
     <div class="container">
 
-    </div><main><section id="inicio">
+    </div>   
+
+    <section class="item ativo">
+        <div class="inicio">
         <h3>UDL: Universo das Letras.</h3>
+        <img src="img/logo.png" alt="logo" class="livro">
         <p> O Universo das Letras é um site feito com o intuito de ajudar os leitores a encontrar a história perfeita para lerem. Aqui, compartilhamos sugestões de livros que marcaram gerações, emocionaram leitores e deixaram uma mensagem inesquecível.</p>
+   </div>
+</section>    
+
+
+
+
+    <section class="item">
+        <div class="bridgerton">
+        <h3>Livros da mesma autora:</h3>
+        <a href="#">"O duque e eu"</a>
+        <a href="#">"O Visconde que me amava"</a>
+        <a href="#">"Os segredos de Colin Bridgerton"</a>
+    </div>
     </section>
-    <section id="sobre" >
+
+    <section class="item">
+        <div class="recomendacao">
+        <h3>Outras recomendações:</h3>
+        <a href="#">Saga Percy Jackson</a>
+        <a href="#">Saga Diário de um Banana</a>
+        <a href="#">Saga Hannibal</a>
+    </div>
+</section>
+
+
+
+<main class="principal">
+    <section class="livro ativo">
+    <div class="sobre" >
         <h1><strong>Um Perfeito Cavalheiro</strong></h1>
         <img src="img/umperfeitocavalheiro.jpg">
-        <div class="sobre">
             <h2>Sobre o livro:</h2>
             <p>"O livro "Um Perfeito Cavalheiro" é uma leitura cativante que combina romance, mistério e drama, levando o leitor a uma jornada cheia de emoções. A história, que tem como base a clássica fábula da Cinderela, traz uma protagonista forte e resiliente, Sophie Beckett, que vive sob a sombra da vergonha e da opressão, mas encontra seu "príncipe" moderno em Benedict Bridgerton. O livro é envolvente tanto pela trama quanto pelos personagens ricos e complexos, como o próprio Benedict, que, ao longo da história, passa por um processo de amadurecimento e redenção. A narrativa explora temas como amor verdadeiro, status social e superação de adversidades, com uma escrita envolvente que mantém o leitor ansioso pelo desenrolar da história. Ao mesmo tempo, o romance apresenta dilemas éticos e sociais da época, tornando a história mais profunda do que um simples conto de fadas. Com diálogos marcantes e um ritmo empolgante, a obra oferece uma leitura deliciosa que vai deixar o leitor torcendo para o final feliz do casal."</p>
         </div>
-    </section>
-    <section id="ler">
+    </div>
+</section>
+
+<section class="livro">
+    <div class="ler">
         <h2>Por quê lê-lo?</h2>
         <p> Se você assistiu a série da Netflix "Bridgerton" e se encantou com Benedict Brridgerton, esse livro é ideal para você. Misturando um lindo romance, com cenas sensiveis e engraçadas, "Um Perfeito Cavalheiro" é tudo de bom que uma releitura de Cinderella  entrega e um pouco mais. </p>
+    </div>
     </section>
-    <section id="perso">
+
+    
+<section class="livro">
+    <div class="perso">
         <h3>Personagens Principais:</h3>
         <img src="img/sophiebaek.png" alt="Sophie Maria Beckett (Baek)">
         <h4>Sophie Maria Beckett (Baek)</h4>
@@ -47,19 +84,23 @@
         <img src="img/benedict.jpg" alt="Benedict Bridgerton">
         <h4>Benedict Bridgerton</h4>
         <p>Benedict é o segundo filho da família Bridgerton e está procurando o sentido de sua vida quando conhece a Dama de Prateado em um baile de máscaras. O problema de ter se apaixonado a primeira vista é que a garota misteriosa simplesmente sumiu. Ele a procura por anos, até conhecer e se apaixonar por uma criada chamada Sophie, sem saber que ela é sua dama misteriosa.</p>
+    </div>
+        </section>
 
-    </section>
-    <section id="avaliafilme">
-        <div>
+        <section class="livro">
+    <div class="avaliafilme">
             <h3>Avaliação</h3>
             <h4>Hyped_lia</h4>
             <p>Até agora, esse é o meu favorito (confesso que sempre gostei do conto da Cinderela). Estou prestes a começar a leitura de *Os Segredos de Colin Bridgerton*. Fiquei um pouco decepcionada quando Benedict sugeriu que ela fosse sua amante, mas entendo que, considerando seu status social na época, ele achava que essa era uma boa solução. Senti falta de cenas entre Sophie e Kate (protagonista do livro anterior) Até agora, foi a história com mais conexão e química entre os protagonistas. E, claro, não posso deixar de mencionar a mãe maravilhosa que é Lady Violet Bridgerton.</p>
-        </div>
-        <div id="adaptacao">
+        </div>        
+        <div class="adaptacao">
             <h3>Adaptação</h3>
             <iframe width="560" height="315" src="https://youtu.be/qrQ8cWUz6RQ?si=BdriZRWEK6CR6nJf" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p>Os livros da saga Bridgerton foram adaptado como uma série na Netflix. A série tem uma temporada focada em cada irmão e seu agregado. A 4° temporada de Bridgerton, aquela focada em Benedict Bridgerton e Sophie Baek (que fora adaptada como uma mulher coreana na série), será lançada em 2026.</p>
-        </div>
+
+    </div>
+    </section>
+
     </main>
         <aside id="branco" >
             <h2>Curiosidades sobre a autora:</h2>
@@ -75,21 +116,25 @@
         </ul>
         </aside>
     </div>
-    </section>
+
 </div>
 </div>
 </div>
 </div>
+            <div class="seta">
+                <button id="anterior" onclick="myFunction()"> ⟸ </button>
+                <button id="proximo" onclick="myFunction()"> ⟹ </button>
+            </div>
 
 
     <footer id="contatos">
         <h4>Universo das Letras</h4>
         <p>Recomendações de livros da mesma autora:</p> 
-        <p><a href="#">"O duque e eu"</a>, <a href="#">"O Visconde que me amava"</a>, <a href="#">"Os segredos de Colin Bridgerton"</a>, etc.</p>
         <button>Saiba mais</button>
         <button>Contatos</button>
         <button><a href="https://www.amazon.com.br/Um-perfeito-cavalheiro-Julia-Quinn/dp/8580412382/ref=asc_df_8580412382/?tag=googleshopp00-20&linkCode=df0&hvadid=709884550216&hvpos=&hvnetw=g&hvrand=7559662808801394385&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9196721&hvtargid=pla-811759349695&psc=1&mcid=eb882aa30fe13c88b9b24f207c122b3a&gad_source=1">Compre aqui</a></button>
     </footer>
     
 </body>
+    <script src="script.js"></script>
 </html>

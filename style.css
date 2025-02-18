@@ -105,7 +105,7 @@ img {
 }
 
 
-#avaliafilme div, #sobre, #ler, #perso, #sobre, #adaptacao {
+ .avaliafilme{
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
@@ -118,9 +118,39 @@ img {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     max-width: 1000px; /* Limita a largura máxima das seções */
     border: groove 2px #6D6D6D; /* Borda do aside */
-}
+ }  
+ 
+ .perso, .sobre, .adaptacao{
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 40px;
+    text-align: center;
+    background: #ed9dffb1;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; /* Limita a largura máxima das seções */
+    border: groove 2px #6D6D6D; /* Borda do aside */
+ }
 
-#perso img {
+ .ler{
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 40px;
+    text-align: center;
+    background: #ed9dffb1;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; /* Limita a largura máxima das seções */
+    border: groove 2px #6D6D6D; /* Borda do aside */
+ }
+
+.perso img {
     width: 40%; 
     height: auto;
     object-fit: cover;
@@ -194,108 +224,98 @@ footer a {
 
 }
 
-/* Responsividade: Para telas maiores que 768px e menores que 1200px */
-@media (max-width: 1200px) {
-    .container {
-        flex-direction: column;
-    }
 
-    main {
-        width: 100%;
-    }
-
-    #branco {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    header img {
-        width: 40px;
-        height: 40px;
-    }
-
-    nav a {
-        margin: 0 10px;
-        padding: 6px 12px;
-    }
-
-    h3, h1 {
-        font-size: 1.875rem; /* 30px */
-    }
-
-    h2 {
-        font-size: 1.125rem; /* 18px */
-    }
-
-    h4 {
-        font-size: 1.375rem; /* 22px */
-    }
-
-    p {
-        font-size: 1em;
-    }
+.livro.ativo{
+    display: block;
 }
 
-/* Para telas menores que 768px */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #branco {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 20px;
-        padding: 20px;
-    }
-
-    footer {
-        font-size: 0.9em;
-    }
-
-    #perso img {
-        width: 60%;
-    }
+.livro.sobre{
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 40px;
+    text-align: center;
+    background: #ed9dffb1;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; /* Limita a largura máxima das seções */
+    border: groove 2px #6D6D6D; /* Borda do aside */
 }
 
-/* Para telas menores que 480px */
-@media (max-width: 480px) {
-    header {
-        padding: 15px;
-    }
 
-    main {
-        width: 100%;
-        padding: 15px;
-    }
 
-    h3, h1 {
-        font-size: 1.5rem; /* 24px */
-    }
 
-    h2 {
-        font-size: 1rem; /* 16px */
-    }
+@keyframes mexer {
+    from {
+    top: 100%;
+    opacity: 0;
+   }
+}
 
-    h4 {
-        font-size: 1.25rem; /* 20px */
-    }
+.item.ativo img.sobre{
+    animation: mexer 0.9s ease-in-out 1;
 
-    p {
-        font-size: 0.9em;
-    }
+}
 
-    footer button {
-        padding: 8px 15px;
-    }
+.item.ativo .titulo{
+    animation: mexer 0.9s ease-in-out 1;
 
-    footer a {
-        font-size: 0.9em;
-    }
+}
+
+.item a{
+    color: #000000;
+    background-color: #e572ff;
+    height: 80%;
+    width: 30%;
+    text-decoration: none;
+    border: #000;
+    border-radius: 10%;
+}
+
+.inicio, .bridgerton, .recomendacao{
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 40px;
+    text-align: center;
+    background: #ed9dffb1;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; /* Limita a largura máxima das seções */
+    border: groove 2px #6D6D6D; /* Borda do aside */
+ }
+
+ #anterior, #proximo{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    width: 40px;
+    height: 30px;
+    background-color: #ed9dffb1;
+    border: 1px solid #9e00c1de;
+    color: #000;
+    font-size: x-large;
+    font-family: monospace;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 20%;
+}
+
+#anterior{
+    left: 30px;
+}
+
+#proximo{
+    right: 30px;
+}
+
+.item .livro{
+    width: 90%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
 }
