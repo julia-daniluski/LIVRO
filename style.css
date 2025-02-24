@@ -224,11 +224,6 @@ footer a {
 
 }
 
-
-.livro.ativo{
-    display: block;
-}
-
 .livro.sobre{
     padding: 20px;
     border-radius: 10px;
@@ -236,7 +231,6 @@ footer a {
     padding: 40px;
     text-align: center;
     background: #ed9dffb1;
-    padding: 20px;
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -244,24 +238,30 @@ footer a {
     border: groove 2px #6D6D6D; /* Borda do aside */
 }
 
-
-
-
-@keyframes mexer {
-    from {
-    top: 100%;
-    opacity: 0;
-   }
+.item{
+    max-width: 80%;
+    display: none;
+    margin: 20px auto;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ed9dffb1;
+    padding: 20px;
+    border: groove 2px #6D6D6D; /* Borda do aside */
 }
 
-.item.ativo img.sobre{
-    animation: mexer 0.9s ease-in-out 1;
-
+.item.ativo{
+    display: block;
 }
 
-.item.ativo .titulo{
-    animation: mexer 0.9s ease-in-out 1;
-
+.item .lendo{
+    width: 10%; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .item a{
@@ -274,25 +274,12 @@ footer a {
     border-radius: 10%;
 }
 
-.inicio, .bridgerton, .recomendacao{
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    padding: 40px;
-    text-align: center;
-    background: #ed9dffb1;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-width: 1000px; /* Limita a largura máxima das seções */
-    border: groove 2px #6D6D6D; /* Borda do aside */
- }
 
  #anterior, #proximo{
-    position: absolute;
+    position: relative;
     top: 50%;
-    transform: translatey(-50%);
+    left: 80%;
+    transform: translate(-75%, -10%);
     width: 40px;
     height: 30px;
     background-color: #ed9dffb1;
@@ -306,16 +293,83 @@ footer a {
 }
 
 #anterior{
-    left: 30px;
+    left: 200px;
 }
 
 #proximo{
     right: 30px;
 }
 
-.item .livro{
-    width: 90%;
-    position: absolute;
-    top: 0;
-    z-index: 3;
+@keyframes mexer {
+    from {
+    top: 100%;
+    opacity: 0;
+   }
+}
+
+.item.ativo img{
+    animation: mexer 0.3s ease-in;
+
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column; /* Muda para coluna em telas menores */
+    }
+
+    main {
+        width: 100%; /* Ajusta a largura do main para ocupar toda a tela */
+    }
+
+    #branco {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%; /* Reduz a largura do aside para 100% */
+        margin-bottom: 30px;
+    }
+
+    h1, h3, h4 {
+        font-size: 28px; /* Reduz o tamanho da fonte para títulos em telas menores */
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .item a {
+        width: 50%; /* Ajusta a largura do link dentro da item */
+    }
+
+    footer button {
+        padding: 8px 16px; /* Ajuste no tamanho do botão */
+    }
+
+    #anterior, #proximo {
+        width: 30px;
+        height: 25px;
+        font-size: medium;
+    }
+}
+
+@media (max-width: 768px) {
+    h1, h2, h3, h4 {
+        font-size: 24px; /* Títulos menores em telas pequenas */
+    }
+
+    p {
+        font-size: 0.9em; /* Fonte menor em telas pequenas */
+    }
+
+    .avaliafilme, .perso, .sobre, .adaptacao, .ler {
+        padding: 15px; /* Menos padding */
+    }
+
+    .item a {
+        width: 70%; /* Aumenta a largura dos links em telas pequenas */
+    }
 }
